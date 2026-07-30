@@ -1,10 +1,3 @@
-/* =====================================================
-            PREMIUM GLASSMORPHISM STOPWATCH
-                PART 1 : BASE LAYOUT
-===================================================== */
-
-/* Google Reset */
-
 *{
     margin:0;
     padding:0;
@@ -40,9 +33,7 @@ padding:35px;
 
 }
 
-/* ===========================================
-        Animated Premium Background
-=========================================== */
+
 
 .background{
 
@@ -83,8 +74,6 @@ padding:35px;
     }
 
 }
-
-/* Floating Glow */
 
 .background::before{
 
@@ -162,9 +151,6 @@ padding:35px;
 
 }
 
-/* ===========================================
-        Main Premium Container
-=========================================== */
 
 .container{
 
@@ -202,7 +188,6 @@ padding:35px;
 
 }
 
-/* Elegant Border */
 
 .container::before{
 
@@ -220,7 +205,6 @@ padding:35px;
 
 }
 
-/* Hover */
 
 .container{
 
@@ -250,9 +234,6 @@ padding:35px;
 
 }
 
-/* ===========================================
-      Left Stopwatch Panel
-=========================================== */
 
 .stopwatch-panel{
 
@@ -265,9 +246,6 @@ padding:35px;
     height:100%;
 
 }
-/* ===========================================
-      Right Lap Panel
-=========================================== */
 
 .lap-panel{
 
@@ -292,9 +270,6 @@ padding:35px;
 
 }
 
-/* ===========================================
-        Smooth Scrollbar
-=========================================== */
 
 ::-webkit-scrollbar{
 
@@ -315,13 +290,6 @@ padding:35px;
     background:rgba(255,255,255,.35);
 
 }
-/* =====================================================
-            PART 2 : HEADER + DISPLAY + STATS
-===================================================== */
-
-/* ==========================
-        Header
-========================== */
 
 .header{
 
@@ -357,9 +325,6 @@ padding:35px;
 
 }
 
-/* ==========================
-      Premium Watch
-========================== */
 
 .watch{
 
@@ -405,9 +370,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Display Section
-========================== */
+
 
 .display-section{
 
@@ -419,7 +382,7 @@ padding:35px;
 
 }
 
-/* Stopwatch */
+
 
 .time{
 
@@ -462,7 +425,6 @@ padding:35px;
 
 }
 
-/* Lap Counter */
 
 .lap-box{
 
@@ -513,9 +475,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Statistics
-========================== */
+
 
 .stats{
 
@@ -594,13 +554,7 @@ padding:35px;
     font-weight:600;
 
 }
-/* =====================================================
-            PART 3 : BUTTONS + LAP PANEL
-===================================================== */
 
-/* ==========================
-        Buttons
-========================== */
 
 .buttons{
 
@@ -654,7 +608,7 @@ padding:35px;
 
 }
 
-/* Icons */
+
 
 .buttons button i{
 
@@ -662,7 +616,7 @@ padding:35px;
 
 }
 
-/* Hover */
+
 
 .buttons button:hover{
 
@@ -680,7 +634,7 @@ padding:35px;
 
 }
 
-/* Click */
+
 
 .buttons button:active{
 
@@ -688,7 +642,7 @@ padding:35px;
 
 }
 
-/* Disabled */
+
 
 .buttons button:disabled{
 
@@ -702,7 +656,7 @@ padding:35px;
 
 }
 
-/* Individual Accent */
+
 
 #start:hover{
 
@@ -736,9 +690,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Keyboard Shortcuts
-========================== */
+
 
 .shortcuts{
 
@@ -782,10 +734,6 @@ padding:35px;
 
 }
 
-/* ==========================
-        Right Panel
-========================== */
-
 .lap-panel{
 
     height:650px;
@@ -808,8 +756,6 @@ padding:35px;
         inset 0 0 20px rgba(255,255,255,.02);
 
 }
-
-/* Header */
 
 .lap-header{
 
@@ -843,9 +789,6 @@ padding:35px;
 
 }
 
-/* ==========================
-        Lap List
-========================== */
 
 .laps{
 
@@ -856,9 +799,7 @@ padding:35px;
     padding-right:6px;
 
 }
-/* ==========================
-      Scrollable Lap History
-========================== */
+
 
 .laps{
 
@@ -884,7 +825,7 @@ padding:35px;
 
 }
 
-/* Scrollbar */
+
 
 .lap-scroll::-webkit-scrollbar{
 
@@ -961,7 +902,6 @@ padding:35px;
 
 }
 
-/* Left side */
 
 #lapList strong{
 
@@ -971,7 +911,7 @@ padding:35px;
 
 }
 
-/* Right side */
+
 
 #lapList small{
 
@@ -983,9 +923,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Fastest Badge
-========================== */
+
 
 .lap-badge.fastest{
 
@@ -1009,9 +947,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Slowest Badge
-========================== */
+
 
 .lap-badge.slowest{
 
@@ -1035,9 +971,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Scrollbar
-========================== */
+
 
 .laps::-webkit-scrollbar{
 
@@ -1064,13 +998,7 @@ padding:35px;
     background:rgba(255,255,255,.35);
 
 }
-/* =====================================================
-            PART 4 : RESPONSIVE + FINAL POLISH
-===================================================== */
 
-/* ==========================
-      Smooth Animations
-========================== */
 
 @keyframes fadeUp{
 
@@ -1098,9 +1026,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Floating Watch
-========================== */
+
 
 @keyframes floating{
 
@@ -1124,9 +1050,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Neon Border Glow
-========================== */
+
 
 .container::after{
 
@@ -1164,9 +1088,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Card Hover
-========================== */
+
 
 .stat-card:hover,
 .time:hover,
@@ -1176,9 +1098,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Stopwatch Numbers
-========================== */
+
 
 .time{
 
@@ -1188,9 +1108,7 @@ padding:35px;
 
 }
 
-/* ==========================
-      Focus States
-========================== */
+
 
 button:focus-visible{
 
@@ -1200,9 +1118,7 @@ button:focus-visible{
 
 }
 
-/* ==========================
-      Better Hover Transition
-========================== */
+
 
 button,
 .stat-card,
@@ -1216,9 +1132,7 @@ button,
 
 }
 
-/* ==========================
-      Mobile (1024px)
-========================== */
+
 
 @media(max-width:1024px){
 
@@ -1250,9 +1164,7 @@ button,
 
 }
 
-/* ==========================
-      Tablet (768px)
-========================== */
+
 
 @media(max-width:768px){
 
@@ -1306,9 +1218,6 @@ button,
 
 }
 
-/* ==========================
-      Mobile (600px)
-========================== */
 
 @media(max-width:600px){
 
@@ -1340,9 +1249,7 @@ button,
 
 }
 
-/* ==========================
-      Small Phones
-========================== */
+
 
 @media(max-width:420px){
 
@@ -1374,9 +1281,7 @@ button,
 
 }
 
-/* ==========================
-      Selection
-========================== */
+
 
 ::selection{
 
@@ -1386,9 +1291,7 @@ button,
 
 }
 
-/* ==========================
-      Premium Glow Pulse
-========================== */
+
 
 @keyframes glowPulse{
 
@@ -1428,9 +1331,7 @@ button,
 
 }
 
-/* ==========================
-      Glass Reflection
-========================== */
+
 
 .time::before,
 .lap-box::before{
