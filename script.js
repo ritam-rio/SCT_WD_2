@@ -1,8 +1,3 @@
-// ======================================
-// Premium Stopwatch - Part 1
-// ======================================
-
-// Elements
 const display = document.getElementById("display");
 
 const startBtn = document.getElementById("start");
@@ -16,24 +11,17 @@ const lapCounter = document.getElementById("lapCounter");
 const fastestLap = document.getElementById("fastestLap");
 const slowestLap = document.getElementById("slowestLap");
 
-// Stopwatch Variables
 let startTime = 0;
 let elapsed = 0;
 let running = false;
 let animationFrame = null;
 
-// Lap Variables
 let lapCount = 1;
 let lastLapElapsed = 0;
 let lapTimes = [];
 
-// Initial Button State
 pauseBtn.disabled = true;
 lapBtn.disabled = true;
-
-// ======================================
-// Format Time
-// ======================================
 
 function formatTime(ms){
 
@@ -57,9 +45,6 @@ function formatTime(ms){
 
 }
 
-// ======================================
-// Animation Loop
-// ======================================
 
 function animate(){
 
@@ -73,9 +58,6 @@ function animate(){
 
 }
 
-// ======================================
-// Start
-// ======================================
 
 function startStopwatch(){
 
@@ -95,9 +77,6 @@ function startStopwatch(){
 
 }
 
-// ======================================
-// Pause
-// ======================================
 
 function pauseStopwatch(){
 
@@ -112,10 +91,6 @@ function pauseStopwatch(){
     pauseBtn.disabled = true;
 
 }
-
-// ======================================
-// Reset
-// ======================================
 
 function resetStopwatch(){
 
@@ -148,20 +123,16 @@ function resetStopwatch(){
     lapBtn.disabled = true;
 
 }
-// ======================================
-// Add Lap
-// ======================================
 
 function addLap(){
 
     if(!running) return;
 
-    // Calculate lap duration
     const lapDuration = elapsed - lastLapElapsed;
 
     lastLapElapsed = elapsed;
 
-    // Store lap information
+ 
     lapTimes.push({
 
         number: lapCount,
@@ -172,14 +143,14 @@ function addLap(){
 
     });
 
-    // Find fastest & slowest lap durations
+
     const durations = lapTimes.map(lap => lap.duration);
 
     const fastest = Math.min(...durations);
 
     const slowest = Math.max(...durations);
 
-    // Update statistics
+   
     const fastestObj = lapTimes.find(lap => lap.duration === fastest);
 
     const slowestObj = lapTimes.find(lap => lap.duration === slowest);
@@ -190,7 +161,7 @@ function addLap(){
     slowestLap.textContent =
         `Lap ${slowestObj.number} • ${formatTime(slowestObj.duration)}`;
 
-    // Rebuild lap list
+  
     lapList.innerHTML = "";
 
     [...lapTimes].reverse().forEach(lap => {
@@ -243,14 +214,10 @@ function addLap(){
 
     lapCount++;
 
-    // Update lap counter
+    
     lapCounter.textContent = lapTimes.length;
 
 }
-
-// ======================================
-// Button Events
-// ======================================
 
 startBtn.addEventListener("click", startStopwatch);
 
@@ -260,9 +227,7 @@ resetBtn.addEventListener("click", resetStopwatch);
 
 lapBtn.addEventListener("click", addLap);
 
-// ======================================
-// Keyboard Shortcuts
-// ======================================
+
 
 document.addEventListener("keydown", function(e){
 
