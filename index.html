@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Glassmorphism Stopwatch</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+<div class="stopwatch-panel">
+    <!-- ================= Header ================= -->
+
+    <div class="header">
+
+        <div class="watch">
+
+            <svg viewBox="0 0 100 100">
+
+                <rect x="42" y="5" width="16" height="10" rx="3"></rect>
+
+                <circle cx="50" cy="50" r="35"></circle>
+
+                <circle cx="50" cy="50" r="29"></circle>
+
+                <line x1="50" y1="50" x2="50" y2="34"></line>
+
+                <line x1="50" y1="50" x2="65" y2="58"></line>
+
+                <circle cx="50" cy="50" r="3" fill="white"></circle>
+
+            </svg>
+
+        </div>
+
+        <h1>Premium Stopwatch</h1>
+
+        
+    </div>
+
+    <!-- ================= Display ================= -->
+
+    <div class="display-section">
+
+        <div class="time" id="display">
+
+            00 : 00 : 00 . 000
+
+        </div>
+
+        <div class="lap-box">
+
+            <span class="lap-title">LAPS</span>
+
+            <span id="lapCounter">0</span>
+
+        </div>
+
+    </div>
+
+    <!-- ================= Buttons ================= -->
+
+    <div class="buttons">
+
+        <button id="start">
+
+            <i class="fa-solid fa-play"></i>
+
+            <span>Start</span>
+
+        </button>
+
+        <button id="pause">
+
+            <i class="fa-solid fa-pause"></i>
+
+            <span>Pause</span>
+
+        </button>
+
+        <button id="lap">
+
+            <i class="fa-solid fa-flag"></i>
+
+            <span>Lap</span>
+
+        </button>
+
+        <button id="reset">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <span>Reset</span>
+
+        </button>
+
+    </div>
+
+    <!-- ================= Keyboard ================= -->
+
+    <div class="shortcuts">
+
+        <span><kbd>Space</kbd> Start / Pause</span>
+
+        <span><kbd>L</kbd> Lap</span>
+
+        <span><kbd>R</kbd> Reset</span>
+
+    </div>
+
+    <!-- ================= Statistics ================= -->
+
+    <div class="stats">
+
+        <div class="stat-card fastest">
+
+            <span class="stat-label">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                Fastest Lap
+
+            </span>
+
+            <span id="fastestLap">--</span>
+
+        </div>
+
+        <div class="stat-card slowest">
+
+            <span class="stat-label">
+
+                <i class="fa-solid fa-hourglass-end"></i>
+
+                Slowest Lap
+
+            </span>
+
+            <span id="slowestLap">--</span>
+
+        </div>
+
+    </div>
+
+    <!-- ================= Lap History ================= -->
+</div>
+
+<div class="lap-panel">
+   <div class="laps">
+
+    <div class="lap-header">
+
+        <h2>
+            <i class="fa-solid fa-list-check"></i>
+            Lap History
+        </h2>
+
+    </div>
+
+    <div class="lap-scroll">
+
+        <ul id="lapList"></ul>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
