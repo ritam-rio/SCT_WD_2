@@ -247,30 +247,6 @@ padding:35px;
 
 }
 
-.lap-panel{
-
-    display:flex;
-
-    flex-direction:column;
-    height:100%;
-
-    min-height:650px;
-
-    background:
-
-    rgba(255,255,255,.035);
-
-    border:1px solid rgba(255,255,255,.06);
-
-    border-radius:28px;
-
-    padding:22px;
-
-    overflow:hidden;
-
-}
-
-
 ::-webkit-scrollbar{
 
     width:7px;
@@ -474,9 +450,6 @@ padding:35px;
     color:white;
 
 }
-
-
-
 .stats{
 
     display:grid;
@@ -554,8 +527,6 @@ padding:35px;
     font-weight:600;
 
 }
-
-
 .buttons{
 
     display:grid;
@@ -607,17 +578,11 @@ padding:35px;
     border-color .35s;
 
 }
-
-
-
 .buttons button i{
 
     font-size:16px;
 
 }
-
-
-
 .buttons button:hover{
 
     transform:translateY(-4px);
@@ -633,17 +598,11 @@ padding:35px;
     0 0 20px rgba(0,255,255,.10);
 
 }
-
-
-
 .buttons button:active{
 
     transform:scale(.97);
 
 }
-
-
-
 .buttons button:disabled{
 
     opacity:.35;
@@ -655,9 +614,6 @@ padding:35px;
     box-shadow:none;
 
 }
-
-
-
 #start:hover{
 
     box-shadow:
@@ -788,8 +744,6 @@ padding:35px;
     color:#00d9ff;
 
 }
-
-
 .laps{
 
     flex:1;
@@ -824,9 +778,6 @@ padding:35px;
     margin-top:15px;
 
 }
-
-
-
 .lap-scroll::-webkit-scrollbar{
 
     width:7px;
@@ -910,9 +861,6 @@ padding:35px;
     color:#fff;
 
 }
-
-
-
 #lapList small{
 
     color:#8e8e8e;
@@ -922,9 +870,6 @@ padding:35px;
     margin-top:4px;
 
 }
-
-
-
 .lap-badge.fastest{
 
     display:inline-block;
@@ -946,9 +891,6 @@ padding:35px;
     letter-spacing:.5px;
 
 }
-
-
-
 .lap-badge.slowest{
 
     display:inline-block;
@@ -970,9 +912,6 @@ padding:35px;
     letter-spacing:.5px;
 
 }
-
-
-
 .laps::-webkit-scrollbar{
 
     width:8px;
@@ -1025,9 +964,6 @@ padding:35px;
     animation:fadeUp .8s ease;
 
 }
-
-
-
 @keyframes floating{
 
     0%,100%{
@@ -1049,9 +985,6 @@ padding:35px;
     animation:floating 4s ease-in-out infinite;
 
 }
-
-
-
 .container::after{
 
     content:"";
@@ -1087,9 +1020,6 @@ padding:35px;
     filter:blur(20px);
 
 }
-
-
-
 .stat-card:hover,
 .time:hover,
 .lap-box:hover{
@@ -1097,9 +1027,6 @@ padding:35px;
     border-color:rgba(255,255,255,.12);
 
 }
-
-
-
 .time{
 
     font-variant-numeric:tabular-nums;
@@ -1107,9 +1034,6 @@ padding:35px;
     font-feature-settings:"tnum";
 
 }
-
-
-
 button:focus-visible{
 
     outline:2px solid rgba(0,255,255,.4);
@@ -1117,9 +1041,6 @@ button:focus-visible{
     outline-offset:3px;
 
 }
-
-
-
 button,
 .stat-card,
 .time,
@@ -1131,9 +1052,6 @@ button,
     all .30s ease;
 
 }
-
-
-
 @media(max-width:1024px){
 
     body{
@@ -1163,9 +1081,6 @@ button,
     }
 
 }
-
-
-
 @media(max-width:768px){
 
     .header h1{
@@ -1217,8 +1132,6 @@ button,
     }
 
 }
-
-
 @media(max-width:600px){
 
     .buttons{
@@ -1248,9 +1161,6 @@ button,
     }
 
 }
-
-
-
 @media(max-width:420px){
 
     .container{
@@ -1280,9 +1190,6 @@ button,
     }
 
 }
-
-
-
 ::selection{
 
     background:#00d9ff;
@@ -1290,9 +1197,6 @@ button,
     color:#000;
 
 }
-
-
-
 @keyframes glowPulse{
 
     0%,100%{
@@ -1330,9 +1234,6 @@ button,
     animation:glowPulse 6s infinite;
 
 }
-
-
-
 .time::before,
 .lap-box::before{
 
